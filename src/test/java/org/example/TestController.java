@@ -24,7 +24,7 @@ class MageControllerTest {
 
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openMocks(this); // Inicjalizuje mocki w Mockito < 3.4.0, w nowszych wersjach używamy @ExtendWith(MockitoExtension.class)
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
@@ -87,7 +87,4 @@ class MageControllerTest {
         String result = mageController.delete("Radagast");
         assertEquals("not found", result);
     }
-
-
-    // Tutaj dodaj więcej testów dla pozostałych metod
 }
